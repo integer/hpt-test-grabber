@@ -45,6 +45,8 @@ class Dispatcher
 
 				$this->output->addResult([$productCode => [
 						'price' => $this->grabber->getPrice($productCode),
+						'name' => $this->grabber->getName($productCode),
+						'rating' => $this->grabber->getRating($productCode),
 					]
 				]);
 			} catch (\ProductNotFoundException $e) {
