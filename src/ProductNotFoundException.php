@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
+namespace HPT;
+
 class ProductNotFoundException extends \Exception
 {
 
-	/**
-	 * @var string
-	 */
+	/** @var string */
 	private $productCode;
 
 	public function __construct(string $message = '', string $productCode, \Throwable $previous = null)
@@ -16,9 +16,6 @@ class ProductNotFoundException extends \Exception
 		$this->productCode = $productCode;
 	}
 
-	/**
-	 * @return string
-	 */
 	public function getProductCode(): string
 	{
 		return $this->productCode;

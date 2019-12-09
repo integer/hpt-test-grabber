@@ -1,0 +1,10 @@
+{
+    "require": {
+        "nette/di": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HPT\\": "src/"
+        }
+    }
+}

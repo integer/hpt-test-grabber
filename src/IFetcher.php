@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
+namespace HPT;
+
 interface IFetcher
 {
 
 	/**
-	 * @param string $productCode
-	 * @return string
-	 * @throws \ProductNotFoundException
+	 * @throws \HPT\ProductNotFoundException
 	 */
 	public function fetch(string $productCode): string;
 

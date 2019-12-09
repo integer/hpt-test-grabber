@@ -1,0 +1,5 @@
+services:
+    - HPT\Dispatcher
+    - HPT\DocumentFetcher
+    - HPT\DocumentGrabber
+    - HPT\ResultOutput
